@@ -1,4 +1,5 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
+/* bring in normalize.css styles */
 
 body {
   margin: 0;
@@ -7,9 +8,43 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* additional code */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #fffbd5, #b20a2c);
+  /* height: 80vh; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* For Normalization */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
